@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://meoxa.fr/sitemap.xml
