@@ -43,12 +43,43 @@
             "addressCountry": "FR"
         },
         "serviceType": [
-            "Intégration IA",
-            "Audit intelligence artificielle",
-            "Automatisation administrative",
-            "Formation IA"
+            "Intégration d'Intelligence Artificielle",
+            "Audit intelligence artificielle pour PME",
+            "Automatisation administrative sur-mesure",
+            "Formation IA en entreprise"
         ],
-        "slogan": "L'intelligence artificielle pragmatique"
+        "slogan": "L'intelligence artificielle pragmatique",
+        "url": "https://meoxa.fr/",
+        "logo": "https://meoxa.fr/images/logo-meoxa.jpg",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services d'Intégration IA",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Diagnostic IA Pragmatique"
+                    },
+                    "price": "490.00",
+                    "priceCurrency": "EUR"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Pack Secrétariat Automatisé par IA"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Pack Gestion Documentaire Intelligente"
+                    }
+                }
+            ]
+        }
     }
     </script>
 
@@ -91,35 +122,59 @@
             class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-meoxaOrange rounded-full mix-blend-multiply filter blur-[128px] opacity-20 z-0">
         </div>
 
-        <nav class="relative z-10 container mx-auto px-6 py-6 flex justify-between items-center">
-            <a href="#" class="flex items-center gap-3">
-                <img src="images/logo-meoxa.jpg" alt="Logo MEOXA"
-                    class="h-12 md:h-14 object-contain rounded-lg shadow-lg">
+        <nav class="relative z-10 container mx-auto px-6 py-6 flex justify-between items-center"
+            aria-label="Navigation principale">
+            <a href="#" class="flex items-center gap-4 group" aria-label="Retour à l'accueil MEOXA">
+                <!-- Nouveau design de logo MX 100% CSS Restoré -->
+                <div
+                    class="relative flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-white/5 border border-white/10 shadow-xl backdrop-blur-md overflow-hidden group-hover:border-meoxaOrange/60 group-hover:shadow-meoxaOrange/20 transition-all duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-meoxaOrange/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative flex items-center transform -skew-x-6">
+                        <span class="text-white font-black text-2xl md:text-4xl tracking-tighter">M</span>
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-br from-meoxaOrange to-yellow-400 font-black text-2xl md:text-4xl tracking-tighter -ml-1 md:-ml-1.5 drop-shadow-md">X</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <span
+                        class="text-white font-black text-2xl md:text-3xl tracking-tight leading-none group-hover:text-meoxaOrange transition-colors duration-300">MEOXA</span>
+                    <span
+                        class="text-[10px] md:text-xs text-blue-200/80 uppercase tracking-widest font-bold mt-1.5">Intelligence
+                        Artificielle</span>
+                </div>
             </a>
             <div class="hidden md:flex items-center gap-8">
-                <a href="#approche" class="text-white hover:text-meoxaOrange transition font-medium">Notre approche</a>
-                <a href="#tarifs" class="text-white hover:text-meoxaOrange transition font-medium">Tarifs</a>
+                <a href="#approche" class="text-white hover:text-meoxaOrange transition font-medium">Notre approche
+                    IA</a>
+                <a href="#tarifs" class="text-white hover:text-meoxaOrange transition font-medium">Tarifs
+                    d'Intégration</a>
                 <a href="#valeurs" class="text-white hover:text-meoxaOrange transition font-medium">Nos valeurs</a>
                 <a href="#contact"
-                    class="bg-meoxaOrange hover:bg-meoxaOrangeHover text-white px-6 py-2.5 rounded-full font-semibold transition shadow-lg shadow-orange-500/30">Contactez-nous</a>
+                    class="bg-meoxaOrange hover:bg-meoxaOrangeHover text-white px-6 py-2.5 rounded-full font-semibold transition shadow-lg shadow-orange-500/30"
+                    aria-label="Demander un diagnostic">Contactez-nous</a>
             </div>
         </nav>
 
         <main class="relative z-10 container mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
             <div class="w-full md:w-1/2 text-center md:text-left">
-                <span
-                    class="inline-block py-1.5 px-4 rounded-full border border-white/20 bg-white/5 text-sm font-semibold tracking-wider text-white/90 mb-6">
-                    <span class="w-2 h-2 inline-block bg-meoxaOrange rounded-full animate-pulse mr-2"></span>
-                    INTÉGRATEUR IA FRANCE
-                </span>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                    L'intelligence artificielle <span
-                        class="bg-gradient-to-r from-meoxaOrange to-yellow-400 gradient-text">pragmatique</span> au
-                    service de votre efficacité.
+                <h1
+                    class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 flex flex-col items-center md:items-start gap-3">
+                    <span
+                        class="inline-block py-1.5 px-4 rounded-full border border-white/20 bg-white/5 text-sm font-semibold tracking-wider text-white/90 self-center md:self-start">
+                        <span class="w-2 h-2 inline-block bg-meoxaOrange rounded-full animate-pulse mr-2"></span>
+                        INTÉGRATEUR IA FRANCE
+                    </span>
+                    <span>L'intelligence artificielle <span
+                            class="bg-gradient-to-r from-meoxaOrange to-yellow-400 gradient-text">pragmatique</span> au
+                        service de votre efficacité.</span>
                 </h1>
                 <p class="text-lg text-blue-200 mb-10 leading-relaxed max-w-xl mx-auto md:mx-0">
-                    Nous vous aidons à intégrer des solutions d'IA simples et sécurisées pour automatiser vos tâches
-                    chronophages. Sans jargon, sans complexité. Juste ce qui fonctionne.
+                    Experts en automatisation pour TPE, PME et Service Public, nous vous aidons à intégrer des solutions
+                    d'IA simples et sécurisées pour automatiser vos tâches chronophages. Sans jargon, sans complexité.
+                    Juste ce qui fonctionne.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                     <a href="#contact"
@@ -154,9 +209,9 @@
     <section class="py-20 px-6 bg-gray-50 border-b border-gray-200">
         <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-16">
-                <span class="text-meoxaOrange font-bold tracking-wider uppercase text-sm">Le Constat</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-meoxaBlue mt-2">L'IA est partout, mais en profitez-vous
-                    vraiment ?</h2>
+                <span class="text-meoxaOrange font-bold tracking-wider uppercase text-sm">Audit & Diagnostic IA</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-meoxaBlue mt-2">L'intelligence artificielle est partout,
+                    mais en profitez-vous vraiment ?</h2>
             </div>
 
             <div class="flex flex-col lg:flex-row gap-12 items-center">
@@ -201,10 +256,11 @@
 
     <section id="approche" class="py-24 px-6 bg-white">
         <div class="container mx-auto text-center mb-16 max-w-3xl">
-            <span class="text-meoxaOrange uppercase tracking-widest font-bold text-sm">Notre méthode</span>
-            <h2 class="text-3xl md:text-4xl font-bold mt-2 text-meoxaBlue mb-4">3 étapes pour intégrer l'IA</h2>
-            <p class="text-gray-600">MEOXA fait le pont entre la technologie et votre métier. Pas de gadget, pas de
-                promesses creuses — que du concret.</p>
+            <span class="text-meoxaOrange uppercase tracking-widest font-bold text-sm">Intégration IA sur-mesure</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2 text-meoxaBlue mb-4">3 étapes pour intégrer l'intelligence
+                artificielle</h2>
+            <p class="text-gray-600">En tant qu'intégrateur IA expert, MEOXA fait le pont entre la technologie de pointe
+                et votre métier. Pas de gadget, pas de promesses creuses — que du concret pour votre entreprise.</p>
         </div>
 
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
@@ -319,9 +375,10 @@
 
     <section class="py-20 px-6 bg-gray-50">
         <div class="container mx-auto text-center mb-16 max-w-3xl">
-            <h2 class="text-3xl font-bold text-meoxaBlue mb-4">Adapté à votre réalité</h2>
-            <p class="text-gray-600">Que vous soyez un artisan ou un service public de 200 agents, nos solutions
-                s'intègrent à vos contraintes.</p>
+            <h2 class="text-3xl font-bold text-meoxaBlue mb-4">L'Automatisation IA adaptée à votre réalité</h2>
+            <p class="text-gray-600">Que vous soyez une TPE/PME cherchant la rentabilité ou un service public de 200
+                agents optimisant ses processus, nos solutions d'intelligence artificielle s'intègrent à vos contraintes
+                organisationnelles.</p>
         </div>
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
             <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 flex gap-6">
@@ -406,15 +463,28 @@
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-12 px-6 border-t border-gray-800 relative z-10">
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6 border-t border-gray-800 relative z-10" role="contentinfo">
         <div class="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="col-span-1 md:col-span-2">
-                <div class="flex items-center gap-3 mb-4">
-                    <img src="images/logo-meoxa.jpg" alt="Logo MEOXA" class="h-10 rounded">
-                </div>
+                <a href="#" class="flex items-center gap-3 mb-6 group inline-flex"
+                    aria-label="Retour à l'accueil MEOXA">
+                    <div
+                        class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gray-800 border border-gray-700 shadow-sm overflow-hidden group-hover:border-meoxaOrange/50 transition-all duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-meoxaOrange/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <div class="relative flex items-center transform -skew-x-6">
+                            <span class="text-white font-black text-xl tracking-tighter">M</span>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-br from-meoxaOrange to-yellow-500 font-black text-xl tracking-tighter -ml-1">X</span>
+                        </div>
+                    </div>
+                    <span
+                        class="text-white font-bold text-xl tracking-tight group-hover:text-meoxaOrange transition-colors duration-300">MEOXA</span>
+                </a>
                 <p class="text-sm mb-4 max-w-sm">
-                    L'intelligence artificielle pragmatique au service de l'efficacité opérationnelle des PME et
-                    collectivités partout en France.
+                    Intégrateur en intelligence artificielle pragmatique au service de l'efficacité opérationnelle des
+                    PME et collectivités partout en France.
                 </p>
                 <div class="text-sm mb-4">
                     📍 Intervention dans toute la France<br>
