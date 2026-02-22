@@ -28,6 +28,11 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://meoxa.fr/">
 
+    <!-- Performance & Mobile -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="theme-color" content="#0B1B42">
+
     <!-- Favicon (Fallback with the logo image for now) -->
     <link rel="icon" type="image/jpeg" href="images/logo-meoxa.jpg">
 
@@ -82,6 +87,38 @@
         }
     }
     </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Combien coûte une intégration IA pour une PME ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nos offres commencent à 490 € HT pour un Diagnostic IA Pragmatique (déductible de la première intégration), et nos packs d'intégration clés en main débutent à 1 490 € HT."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Faut-il des compétences techniques pour utiliser vos solutions IA ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolument pas. MEOXA est un intégrateur IA pragmatique : nous concevons des solutions clés en main, avec zéro barrière technique, et nous formons vos équipes pour qu'elles soient autonomes immédiatement."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Les données de mon entreprise sont-elles en sécurité avec l'IA ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La sécurité est notre priorité. Nos solutions sont déployées dans le strict respect du RGPD, avec des modèles souverains ou sécurisés garantissant que vos données restent confidentielles et ne sont pas utilisées pour entraîner d'autres IA."
+                }
+            }
+        ]
+    }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -115,10 +152,10 @@
 <body class="bg-white text-gray-800 min-h-screen flex flex-col relative overflow-x-clip">
 
     <div class="bg-meoxaBlue text-white relative">
-        <div
+        <div aria-hidden="true"
             class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-[128px] opacity-40 z-0">
         </div>
-        <div
+        <div aria-hidden="true"
             class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-meoxaOrange rounded-full mix-blend-multiply filter blur-[128px] opacity-20 z-0">
         </div>
 
@@ -147,14 +184,18 @@
                 </div>
             </a>
             <div class="hidden md:flex items-center gap-8">
-                <a href="#approche" class="text-white hover:text-meoxaOrange transition font-medium">Notre approche
+                <a href="#approche" title="Découvrir notre approche d'intégration IA"
+                    class="text-white hover:text-meoxaOrange transition font-medium">Notre approche
                     IA</a>
-                <a href="#tarifs" class="text-white hover:text-meoxaOrange transition font-medium">Tarifs
+                <a href="#tarifs" title="Consulter nos tarifs d'intégration IA"
+                    class="text-white hover:text-meoxaOrange transition font-medium">Tarifs
                     d'Intégration</a>
-                <a href="#valeurs" class="text-white hover:text-meoxaOrange transition font-medium">Nos valeurs</a>
+                <a href="#valeurs" title="En savoir plus sur nos valeurs"
+                    class="text-white hover:text-meoxaOrange transition font-medium">Nos valeurs</a>
                 <a href="#contact"
                     class="bg-meoxaOrange hover:bg-meoxaOrangeHover text-white px-6 py-2.5 rounded-full font-semibold transition shadow-lg shadow-orange-500/30"
-                    aria-label="Demander un diagnostic">Contactez-nous</a>
+                    aria-label="Demander un diagnostic IA gratuit"
+                    title="Demander un diagnostic IA gratuit">Contactez-nous</a>
             </div>
         </nav>
 
@@ -444,7 +485,48 @@
         </div>
     </section>
 
-    <section id="contact" class="bg-gray-50 py-24 px-6 relative z-10">
+    <section id="faq" class="py-20 px-6 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16">
+                <span class="text-meoxaOrange font-bold tracking-wider uppercase text-sm">Vos questions</span>
+                <h2 class="text-3xl font-bold text-meoxaBlue mt-2">Foire Aux Questions</h2>
+            </div>
+
+            <div class="space-y-6">
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-meoxaOrange transition">
+                    <h3 class="font-bold text-lg text-meoxaBlue mb-3">Combien coûte une intégration IA pour une PME ?
+                    </h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Nos offres commencent à 490 € HT pour un Diagnostic
+                        IA Pragmatique (totalement déductible de votre première intégration). Nos packs d'intégration
+                        clés en main (Secrétariat, Gestion Documentaire) débutent à 1 490 € HT avec un ROI mesurable.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-meoxaOrange transition">
+                    <h3 class="font-bold text-lg text-meoxaBlue mb-3">Faut-il des compétences techniques pour utiliser
+                        vos solutions IA ?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Absolument pas. MEOXA se positionne comme un
+                        intégrateur pragmatique. Nous concevons et installons des solutions avec zéro barrière
+                        technique. De plus, la formation de vos équipes à l'utilisation est incluse dans tous nos packs.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-meoxaOrange transition">
+                    <h3 class="font-bold text-lg text-meoxaBlue mb-3">Les données de mon entreprise sont-elles en
+                        sécurité avec l'IA ?</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">C'est une priorité absolue. Toutes nos intégrations
+                        sont conçues dans le strict respect du RGPD. Nous utilisons des modèles souverains ou totalement
+                        sécurisés, garantissant que vos données internes ne sont jamais réutilisées pour entraîner
+                        d'autres IA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white py-24 px-6 relative z-10">
         <div class="container mx-auto max-w-4xl bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
             <div class="p-12 md:p-16 text-center">
                 <span class="text-meoxaOrange font-bold tracking-wider uppercase text-sm">Passez à l'action</span>
